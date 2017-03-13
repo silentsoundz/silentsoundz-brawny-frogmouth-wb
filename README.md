@@ -5,19 +5,19 @@
  [ ]Artifact is a GitHub repo.<br>
     [ ]20 exercises are completed from the "Learn Enough Command Line to be Dangerous" book.<br>
     [ ]Solution code for each exercise is included in its own file.<br>
-    [ ]Solution code for exercises are stored in a command-line/ directory of your artifact repo.
-    [ ]Solution code for each exercise includes a comment with the prompt text for the exercise.
- [ ]20 activities are completed from the Bash Scripting tutorials.
-    [ ]Solution code for each activity is included in its own file.
-    [ ]Solution code for activities are stored in a bash-scripting/ directory of your artifact repo.
-    [ ]Solution code for each activity includes a comment with the prompt text for the activity.
- [ ]Cheat sheet of your favorite useful commands and a brief explanation of what they do is included in the artifact as a cheat-sheet.md file.
- [ ]The artifact produced is properly licensed, preferably with the MIT license.
+    [ ]Solution code for exercises are stored in a command-line/ directory of your artifact repo.<br>
+    [ ]Solution code for each exercise includes a comment with the prompt text for the exercise.<br>
+ [ ]20 activities are completed from the Bash Scripting tutorials.<br>
+    [ ]Solution code for each activity is included in its own file.<br>
+    [ ]Solution code for activities are stored in a bash-scripting/ directory of your artifact repo.<br>
+    [ ]Solution code for each activity includes a comment with the prompt text for the activity.<br>
+ [ ]Cheat sheet of your favorite useful commands and a brief explanation of what they do is included in the artifact as a cheat-sheet.md file.<br>
+ [ ]The artifact produced is properly licensed, preferably with the MIT license.<br>
 ##Stretch
 
- [ ]All exercises are completed from the "Learn Enough Command Line to be Dangerous" book and solution code is included as files under a command-line/ directory.
- [ ]All activities are completed from the Bash Scripting tutorials and solution code is included as files under a bash-scripting/ directory.
- [ ]10 activities are completed from the Linux tutorials and solution code is included as files under a linux/ directory.*
+ [ ]All exercises are completed from the "Learn Enough Command Line to be Dangerous" book and solution code is included as files under a command-line/ directory.<br>
+ [ ]All activities are completed from the Bash Scripting tutorials and solution code is included as files under a bash-scripting/ directory.<br>
+ [ ]10 activities are completed from the Linux tutorials and solution code is included as files under a linux/ directory.<br>
 *Note: there will likely be overlap between this tutorial and the Hartl book. Choose only activities that cover new material so you don't do redundant work.
 
 Quality Rubric
