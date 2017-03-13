@@ -2,9 +2,9 @@
 
 ##Specifications
 
- [ ]Artifact is a GitHub repo.
-    [ ]20 exercises are completed from the "Learn Enough Command Line to be Dangerous" book.
-    [ ]Solution code for each exercise is included in its own file.
+ [ ]Artifact is a GitHub repo.<br>
+    [ ]20 exercises are completed from the "Learn Enough Command Line to be Dangerous" book.<br>
+    [ ]Solution code for each exercise is included in its own file.<br>
     [ ]Solution code for exercises are stored in a command-line/ directory of your artifact repo.
     [ ]Solution code for each exercise includes a comment with the prompt text for the exercise.
  [ ]20 activities are completed from the Bash Scripting tutorials.
