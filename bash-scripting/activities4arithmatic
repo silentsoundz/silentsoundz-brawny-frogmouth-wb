@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Create a simple script which will take two command line
+#  arguments and then multiply them together using each of the
+#  methods detailed above.
+
+let "a = 3 * 7"
+echo $a
+
+a=$( expr 3 \* 7 )
+echo $a
+
+a=$(( 3 * 7 ))
+echo $a
+
+# Write a Bash script which will print tomorrows date.
+#  (Hint: use the command date)

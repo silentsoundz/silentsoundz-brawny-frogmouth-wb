@@ -12,12 +12,7 @@ command line arguments and echo out some details about them
 (eg, how many are there, what is the second one etc)
 
 Execution:
-#!/bin/bash
-# A simple variable example
-ourvariable='middle finger up'
-myvariable=boy
-anothervar=bye
-echo $ourvariable , wave em hands high, point it in his face, tell him $myvariable $anothervar
+./bs2-1
 
 ?2. Create a script which will print a random word.
 There is a file containing a list of words on your system
@@ -25,8 +20,7 @@ There is a file containing a list of words on your system
 Hint: Piping will be useful here.
 
 Execution:
-#!/bin/bash
-awk 'NR=='$RANDOM /usr/share/dict/words
+./bs2-2
 
 ?3. Expand the previous activity so that if a number is supplied as the first
 command line argument then it will select from only words with that many
@@ -34,7 +28,7 @@ characters. Hint: Grep may be useful here.
 
 Execution:
 #!/bin/bash
-grep -E '^[[:alpha:]]{4}$' /usr/share/dict/words
+./bs2-3
 
 ?4. Take a copy of the two files script1.sh and
 script2.sh above then experiment by tweaking them and running them and
@@ -42,53 +36,6 @@ observing the output. This will help you get a feel for
 how exporting variables works.
 
 Execution:
-script1.sh
-#!/bin/bash
-QueenBey="Freedom! Freedom! I can't move
-Freedom, cut me loose!
-Freedom! Freedom! Where are you?
-Cause I need freedom too!
-I break chains all by myself
-Won't let my freedom rot in hell
-Hey! I'ma keep running
-Cause a winner don't quit on themselves"
-
-QueenBey2="I'ma wade, I'ma wave through the waters
-Tell the tide, Don't move
-I'ma riot, I'ma riot through your borders
-Call me bulletproof
-Lord forgive me, I've been runnin'
-Runnin' blind in truth
-I'ma wade, I'ma wave through your shallow love
-Tell the deep I'm new"
-
-QueenBey3="I'm telling these tears, Go and fall away, fall away
-May the last one burn into flames"
-
-echo $QueenBey3 $QueenBey $QueenBey2
-
-
-script2.sh
-#!/bin/bash
-lemonade1="Ten times out of nine, I know you‘re lying
-But nine times out of ten, I know you're trying
-So I'm trying to be fair
-And you're trying to be there and to care
-And you're caught up in your permanent emotions"
-
-lemonade2="All the loving I've been giving goes unnoticed
-It's just floating in the air, lookie there
-Are you aware you're my lifeline, are you tryna kill me?"
-
-
-lemonade3="If I wasn't me, would you still feel me?
-Like on my worst day? Or am I not thirsty, enough?
-I don't care about the lights or the beams
-Spend my life in the dark for the sake of you and me
-Only way to go is up, skin thick, too tough"
-
-echo $lemonade1 $lemonade2 $lemonade3
-
 ./script1.sh
 ./script2.sh
 
@@ -101,9 +48,6 @@ file1.txt it would create a copy such as 2017-03-16_file1.txt.
 and the command date
 
 Execution:
-#!/bin/bash
-date=$(date +%d-%m-%y)
-echo $date"_"$1
 
 ./file1.txt script2.txt
 
@@ -116,70 +60,16 @@ of information then combine this into a message which is echo'd to the
 screen.
 
 Execution:
-#!/bin/bash
-
-# Ask the user some info
-
-echo Greetings, what is your name?
-
-read varname
-
-echo It\'s nice to meet you $varname
-
-echo Michael or Prince?
-
- read artistvar
-
- echo $artistvar that\'s cool I love them both.
+./MVP.sh
 
 ?2. Add to the previous script to add in some data coming from command
 line arguments and maybe some of the other system variables.
 
 Execution:
-#!/bin/bash
+./MVP.sh
 
-# Ask the user some info
 
-echo Greetings, what is your name?
-
-read varname
-
-echo It\'s nice to meet you $varname
-
-echo Michael or Prince?
-
- read artistvar
-
- echo $artistvar that\'s cool I love them both.
-
- echo what are your top three songs
-
- read song1 song2 song3
-
- echo You first song was: $song1
- echo You second song was: $song2
- echo You third song was: $song3
-
- ?3: Create a script which will take data from STDIN and print
- the 3rd line only.
+?3. Create a script which will take data from STDIN and print the 3rd line only.
 
  Execution:
- 2 files
-
- scrip2.sh
-   #!/bin/bash
-
-   #music list for STDIN command
-
-   echo Here is the genre of the your music list.
-   echo ===========================================
-   echo
-   cat /dev/stdin | cut -d' ' -f 3 | sort
-
-simple-script.txt
-  Davido Skelewu Afrobeats
-  Aaliyah Rock-the-boat RnB
-  Beyonce Listen RnB
-  Drake Fake-love Canadian
-
-  cat simple-script.txt | ./script2.sh
+  cat bs3-2.sh | ./bs3-3.sh
