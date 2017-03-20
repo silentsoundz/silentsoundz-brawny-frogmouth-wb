@@ -1,0 +1,75 @@
+# Bash Scripting tutorials
+
+##Table of Contents
+- [1: Variables](#1-variables)
+
+##1: Variables
+
+###Tutorial: 2
+
+?1. A good place to start is to create a simple script which will accept some
+command line arguments and echo out some details about them
+(eg, how many are there, what is the second one etc)
+
+Execution:
+./bs2-1
+
+?2. Create a script which will print a random word.
+There is a file containing a list of words on your system
+(usually /usr/share/dict/words or /usr/dict/words).
+Hint: Piping will be useful here.
+
+Execution:
+./bs2-2
+
+?3. Expand the previous activity so that if a number is supplied as the first
+command line argument then it will select from only words with that many
+characters. Hint: Grep may be useful here.
+
+Execution:
+#!/bin/bash
+./bs2-3
+
+?4. Take a copy of the two files script1.sh and
+script2.sh above then experiment by tweaking them and running them and
+observing the output. This will help you get a feel for
+how exporting variables works.
+
+Execution:
+./script1.sh
+./script2.sh
+
+we used append, redirect, we used cat to check our work...
+
+?5. Now let's create a script which will take a filename as its first
+argument and create a dated copy of the file. eg. if our file was named
+file1.txt it would create a copy such as 2017-03-16_file1.txt.
+(To achieve this you will probably want to play with command substitution
+and the command date
+
+Execution:
+
+./file1.txt script2.txt
+
+cp -R file1.txt script2.sh
+
+### Tutorials 3. User input
+
+?1.Create a simple script which will ask the user for a few pieces
+of information then combine this into a message which is echo'd to the
+screen.
+
+Execution:
+./MVP.sh
+
+?2. Add to the previous script to add in some data coming from command
+line arguments and maybe some of the other system variables.
+
+Execution:
+./MVP.sh
+
+
+?3. Create a script which will take data from STDIN and print the 3rd line only.
+
+ Execution:
+  cat bs3-2.sh | ./bs3-3.sh
